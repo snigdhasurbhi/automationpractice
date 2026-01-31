@@ -1,4 +1,17 @@
+#####################   About Git  ############################
+
+Git is a distributed version control software system that is capable of managing versions of source code or data. It is often used to control source code by programmers who are developing software collaboratively.
+
+##################### Git and GitHub #############################
+
+Git is the version control software that runs locally on our machine. we don't need to register for an account. we don't need the internet to use it. we can use  git without using GitHub.
+
+                               vs 
+GitHub is a service that hosts git repositories in the cloud and make it easier to collaborate with the other people. we do need to sign up for an account to use GitHub. its an online place to share work that is done using git.
+
+
 ########################Create GitHub Account #######
+
 1.  Go to GitHub.com
 2. click on signup button 
 3. provide required info
@@ -21,6 +34,7 @@
 7.  Repository created successfully.
 
 ############ Install Git hub Client on local machine ###########
+
 1. Go to google 
 2. Search for git download and download 64 bit git client from below link
 https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/Git-2.52.0-64-bit.exe
