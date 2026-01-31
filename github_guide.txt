@@ -9,6 +9,30 @@ Git is the version control software that runs locally on our machine. we don't n
                                vs 
 GitHub is a service that hosts git repositories in the cloud and make it easier to collaborate with the other people. we do need to sign up for an account to use GitHub. its an online place to share work that is done using git.
 
+################# different ways of interacting with git: command line & GUIs ####################################
+
+git is a command line (cl) tool. all docs and resource online will refer to the cl.
+the cl can be faster way once you get comfortable with it.
+the cl are always the same, no matter what machine you are on.
+some of the advanced git features are only available on the cl.
+
+gui client is way lower barrier of the entry beginners compared to the command line(cl)
+some people prefer the visual experience even those who can use the cl.
+friendlier to use. can be a much better experience (when it works).
+but when things go seriously wrong, it can be very challenging to fix without the cl.
+the interface, button, menus vary between different gui's 
+often dependance on particular piece of s/w.
+
+###################### why git bash #####################################
+bash is a command line(cl) interface that is widely used by developers. its the default shell for Linux and mac. git was designed to run on a unix-based interface(like bash).
+
+windows come with different default command line interface called command prompt that is not unix-based.
+but fortunately we have git bash. Git bash is a tool that emulates a bash experience on a windows machine. and of course it comes with git too.
+
+
+
+
+
 
 ########################Create GitHub Account #######
 
@@ -104,10 +128,34 @@ https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/Git-2
 
 8. Check file should be available on git server in dedicated repository.
 
+#################### Provide Common Repo Access and Create folder with Name ##################
 
-Add Three different Files .
-1.  Add three file and push to repo.
-3.  Update all three file then push to repo.
+1.  Add new user as collaborator, user will receive email, that has to accept
+    -> Once invitation is accepted, use will able to see the repository in git account.
+
+2. Go to already available Git Repo folder on local machine and open git terminal in the same folder.
+
+3. Clone the repository with given command
+   -> git clone https://github.com/sqatools/GTM_PlaywrightTS_BATCH09.git
+
+4. Once the cloning is successful, repository folder should be visible on local system.
+
+5. Create a folder with your name in repo e.g. Rahul
+
+6. Add a file in the same folder.
+
+7. follow steps to push file.
+   ->  git status :  new folder will show in red color
+   ->  git add <folder name>
+   ->  git status
+   ->  git commit -m "Adding new folder repo"
+   ->  git push (Git push will be rejected) 
+
+   ->  git push is rejected, due to git server data is not sync with local system
+       we have to update the local repo with command git pull
+   ->  git pull :  It will open an editor, we have to close the editor with :wq
+   ->  again try to push
+   ->  If push is rejected again, then follow same step (pull -> then push)
 
 
 
